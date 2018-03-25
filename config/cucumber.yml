@@ -1,0 +1,3 @@
+default: features --tag "not @wip"
+smoke: --tag "@smoke"
+html_report: --format progress --format html --out=reports/features_report.html

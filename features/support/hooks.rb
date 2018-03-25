@@ -4,8 +4,11 @@ BROWSER_TYPE = :chrome
 Before { self.assertions = 0 }
 
 def browser
-  @browser =|| Watir::Browser.new(BROWSER_TYPE)
+  @browser ||= Watir::Browser.new(BROWSER_TYPE)
 end
 
 Before { browser }
-After  { @browser.close }
+After  do
+  @browser.close
+  send(:remove_instance_variable, :@browser)
+end

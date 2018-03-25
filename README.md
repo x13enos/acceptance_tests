@@ -28,4 +28,9 @@
     bundle install
   ```
 
+  The last thing, you should initiate cucumber, so:
+  ```
+    cucumber --init
+  ```
+
 That's all, you are ready for work!

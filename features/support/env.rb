@@ -1,3 +1,4 @@
+require 'dotenv/load'
 require 'watir'
 require 'selenium-webdriver'
 require 'minitest/test'

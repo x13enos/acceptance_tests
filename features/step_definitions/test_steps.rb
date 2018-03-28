@@ -1,5 +1,5 @@
 Given /^I am on the home page$/ do
-    browser.goto("")
+    browser.goto(path_to("home page"))
 end
 
 Then(/^I should see login input/) do

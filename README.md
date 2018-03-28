@@ -33,4 +33,4 @@
     cucumber --init
   ```
 
-That's all, you are ready for work!
+  This application use .env file for load environment variables, don't forget about setting BASE_PATH and other variables.
